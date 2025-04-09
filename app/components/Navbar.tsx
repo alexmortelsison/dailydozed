@@ -38,7 +38,7 @@ export default function Navbar() {
           daily<span className="text-[#fddf5b]">dozed.</span>
         </p>
       </div>
-      <div className="flex space-x-4">
+      <div className="space-x-4 hidden md:inline-flex">
         {navLinks.map((link) => (
           <div key={link.href} className="">
             <Link
@@ -54,7 +54,7 @@ export default function Navbar() {
           </div>
         ))}
       </div>
-      <div className="leading-0">
+      <div className="leading-0 hidden md:block">
         <h1 className="font-semibold text-lg">The Future of Streetwear</h1>
         <br />
         <p className="text-sm text-muted-foreground">
